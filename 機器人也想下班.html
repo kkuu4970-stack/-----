@@ -58,6 +58,31 @@
                 邀請機器人
             </a>
         </header>
+                <!-- 📣 最新公告-->
+        <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-indigo-300 border-b border-indigo-500/50 pb-2 mt-16">
+           📣 最新公告
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            
+            <!-- 📣 最新公告 -->
+            <div class="feature-card p-6 rounded-xl shadow-lg">
+                <div class="flex items-center mb-3">
+                    <span class="text-3xl mr-3">📣 </span>
+                    <h3 class="text-xl font-semibold text-white">📣 最新公告</h3>
+                </div>
+                <p class="text-gray-300 text-sm">音樂系統修復中  最後更新2025/10/23</p>
+            </div>
+
+        <!-- 關於機器人也想下班 區塊 -->
+        <div class="mb-16">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-indigo-300 border-b border-indigo-500 pb-2">
+                關於機器人也想下班
+            </h2>
+            <p class="text-lg text-gray-200">
+                <span class="font-bold text-indigo-400">機器人也想下班</span>是一款全方位 Discord 機器人，旨在提升社群互動體驗。
+                它擁有娛樂、管理、安全、客服單等多種模組，並承諾持續更新！
+            </p>
+        </div>
         
         <!-- 🌟 主要功能 區塊 (已更新為三個指定功能) -->
         <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-indigo-300 border-b border-indigo-500/50 pb-2 mt-16">
@@ -149,33 +174,7 @@
                 它擁有娛樂、管理、安全、客服單等多種模組，並承諾持續更新！
             </p>
         </div>
-
-        <!-- 疑難排解 (卡住的處理) -->
-        <div class="mb-16 bg-[#252540] p-6 rounded-xl shadow-xl border-l-4 border-orange-500">
-            <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-orange-300">
-                ❓ 疑難排解：指令卡在「正在思考」？
-            </h2>
-            <p class="text-lg text-gray-200 mb-4">
-                會顯示「正在思考...」，代表您的程式碼在處理時間較長的指令時，使用了 <code class="bg-[#363658] px-2 py-0.5 rounded-md text-pink-400">await interaction.deferReply();</code>。
-            </p>
-
-            <div class="code-block mb-6">
-                <pre class="text-sm text-gray-100"><code>// 程式碼用途：告訴 Discord 處理需要時間
-await interaction.deferReply();</code></pre>
-            </div>
-
-            <p class="text-lg text-gray-200 mb-4">
-                這個程式碼用途是告訴 Discord：「我收到了指令，但處理這個指令 (例如：搜尋音樂、下載音樂) 需要一點時間，請你先顯示『正在思考』，我處理完會再給你答覆。」
-            </p>
-
-            <h3 class="text-xl font-semibold text-orange-400 mb-2">卡住的原因通常是以下三點：</h3>
-            <ul class="list-disc list-inside text-gray-300 ml-4 space-y-2">
-                <li>**A. 遇到了錯誤 (Error)**：導致程式執行中斷，沒有執行到最後的回覆。</li>
-                <li>**B. 遺漏了 <code class="bg-[#363658] px-2 py-0.5 rounded-md text-pink-400">await</code>**：導致程式沒有等待非同步操作完成，就結束了。</li>
-                <li>**C. 某個邏輯分支**：讓您「忘記」回覆訊息 (例如：只在特定條件下回覆，但條件未達成)。</li>
-            </ul>
-        </div>
-        
+            
         <!-- 條款與政策區塊 -->
         <div class="bg-[#252540] p-6 rounded-xl shadow-lg border border-indigo-500/30">
             <h2 class="text-2xl font-bold mb-6 text-indigo-300">服務條款與政策</h2>
@@ -217,4 +216,5 @@ await interaction.deferReply();</code></pre>
 
 </body>
 </html>
+
 
